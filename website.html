@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫tmall.com--理想生活上天猫</title>
+    <link rel="icon" type="image/x-icon" href="img/tmall.png" />
+</head>
+<style>
+    body{
+        margin: 0;
+        font-size: 12px;
+    }
+    input{
+        padding: 0;
+        margin: 0;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    #nav{
+        width: 100%;
+        height: 32px;
+        color: #999999;
+        background-color: #F2F2F2;
+    }
+    #nav ul li{
+        float: left;
+        margin-left: 15px;
+        line-height: 32px;
+    }
+    #nav ul a{
+        color: #999999;
+    }
+    #nav ul a:hover{
+        color: red;
+    }
+    #nav_left{
+        margin-left: -10px;
+    }
+    #nav_right{
+        margin-left: 800px;
+        height: 32px;
+        width: 400px;
+    }
+    .clear{
+        zoom:1;
+    }
+    .clear:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    #top_m{
+        height: 130px;
+    }
+    #gif{
+        margin-left: -38px;
+    }
+    #text{
+        width: 491px;
+        height: 36px;
+        border:2px solid red;
+        font-size: 16px;
+        line-height: 36px;
+        color: #C9CAC9;
+        vertical-align:middle;
+    }
+    #button{
+        width: 132px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        color: white;
+        background-color: red;
+        border-style: none;
+        margin-left: -4px;
+        vertical-align:middle;
+    }
+    #input_all{
+        margin-top: -80px;
+        margin-left: 400px;
+        width:650px;
+    }
+    #rotation{
+        line-height: 36px;
+        font-size: 16px;
+    }
+    #sort{
+        width: 200px;
+        height: 36px;
+        color: white;
+        background-color: red;
+        float: left;
+        font-weight: 700;
+        margin-left: 6px;
+    }
+    #sort img{
+        width:20px ;
+        height: 20px;
+        vertical-align:middle;
+        margin-right: 10px;
+    }
+    #rotation #first_nav li{
+        float: left;
+        margin-left: 24px;
+    }
+    #rotation #first_nav li a{
+        color: black;
+    }
+    #rotation #first_nav li a:hover{
+        color: red;
+    }
+    #rotation #first_nav li img{
+        width: 100px;
+        height: 30px;
+        margin-top: 3px;
+        display: block;
+        cursor: pointer;
+    }
+    #first_nav{
+        width: 1100px;
+    }
+    #img_ad{
+        width: 100%;
+        background: url("img/Carousel4.webp") no-repeat center;
+    }
+    #back{
+        width: 200px;
+        background-color: black;
+        opacity: 0.7;
+        border: 1px solid black;
+        font-size: 14px;
+        line-height: 30px;
+        color: white;
+        margin-left: 6px;
+    }
+    #back img{
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin: 0 6px 0 4px ;
+    }
+    #tmall{
+        width: 100%;
+        height: 140px;
+        text-align: center;
+    }
+
+</style>
+<body>
+<div id="top">
+    <div id="nav">
+        <div id="nav_left" >
+            <ul>
+                <li>喵，欢迎来到天猫</li>
+                <li><a href="#">请登录</a></li>
+                <li><a href="#">免费注册</a></li>
+            </ul>
+        </div>
+        <div id="nav_right" class="clear">
+            <ul>
+                <li><a href="#">我的淘宝</a></li>
+                <li><a href="#">购物车</a></li>
+                <li><a href="#">收藏夹</a></li>
+                <li><a href="#">手机版</a></li>
+                <li><a href="#">淘宝网</a></li>
+                <li><a href="#">商家支持</a></li>
+                <li><a href="#">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top_m">
+        <img id="gif" src="img/1.gif"/>
+        <div id="input_all">
+        <input  id="text" type="text" value="搜索 天猫 商品/品牌/店铺"/>
+        <input id="button" type="button" value="搜索"/>
+        </div>
+    </div>
+</div>
+<div id="rotation">
+    <div id="sort"><img src="img/daohang_red.png"/>商品分类</div>
+    <ul id="first_nav" class="clear">
+            <li><img src="img/tmall_g.png"></li>
+            <li><img src="img/tamll_p.png"></li>
+            <li><a href="#">天猫会员</a></li>
+            <li><a href="#">电器城</a></li>
+            <li><a href="#">喵鲜生</a></li>
+            <li><a href="#">医药馆</a></li>
+            <li><a href="#">营业厅</a></li>
+            <li><a href="#">魅力惠</a></li>
+            <li><a href="#">飞猪旅行</a></li>
+            <li><a href="#">苏宁易购</a></li>
+    </ul>
+    <div id="img_ad">
+        <div id="back">
+            <ul>
+                <li><img src="img/女装内衣.png"/>女装/内衣</li>
+                <li><img src="img/男装.png"/>男装/运动户外</li>
+                <li><img src="img/男鞋.png"/>女鞋/男鞋/箱包</li>
+                <li><img src="img/美妆.png"/>美妆/个人护理</li>
+                <li><img src="img/珠宝.png"/>腕表/眼镜/珠宝饰品</li>
+                <li><img src="img/手机.png"/>手机/数码/电脑办公</li>
+                <li><img src="img/母婴玩具%20(2).png"/>母婴玩具</li>
+                <li><img src="img/食品.png"/>零食/茶酒/进口食品</li>
+                <li><img src="img/生鲜水果.png"/>生鲜水果</li>
+                <li><img src="img/冰箱.png"/>大家电/生活电器</li>
+                <li><img src="img/家具建材.png"/>家具建材</li>
+                <li><img src="img/车%20汽车.png"/>汽车/配件/用品</li>
+                <li><img src="img/家纺.png"/>家纺/家饰/鲜花</li>
+                <li><img src="img/医药保健.png"/>医药保健</li>
+                <li><img src="img/茶杯.png"/>厨具/收纳/宠物</li>
+                <li><img src="img/图书音像.png"/>图书音像</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="tmall">
+<img src="img/tian.png">
+</div>
+<script>
+    window.onload=function (){
+        var oDiv=document.getElementById("back");
+        var aLi=oDiv.getElementsByTagName("li");
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].onmouseover=function (){
+                this.style.cursor="pointer";
+                this.style.backgroundColor="white";
+                this.style.color="blue";
+            }
+            aLi[i].onmouseout=function (){
+                this.style.backgroundColor="black";
+                this.style.color="white";
+            }
+        }
+        var img=["img/Carousel4.webp","img/Carousel3.webp","img/Carousel2.webp","img/Carousel1.jpg",
+            "img/Carousel5.jpg","img/Carousel6.jpg"];
+        var oImg=document.getElementById("img_ad");
+        oImg.style.background="url(img/Carousel4.webp)";
+        var i=0;
+        setInterval(function (){
+            i++;
+            i=i%img.length;
+            oImg.style.background="url("+img[i]+")";
+        },5000)
+    }
+</script>
+</body>
+</html>

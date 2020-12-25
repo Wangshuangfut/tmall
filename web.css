@@ -1,0 +1,229 @@
+body{
+    margin: 0 auto;
+    font-size: 12px;
+    width: 100%;
+}
+input{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+#nav{
+    width: 100%;
+    height: 32px;
+    color: #999999;
+    background-color: #F2F2F2;
+}
+#nav ul li{
+    float: left;
+    margin-left: 15px;
+    line-height: 32px;
+}
+#nav ul a{
+    color: #999999;
+}
+#nav ul a:hover{
+    color: red;
+}
+#nav_left{
+    margin-left: -10px;
+}
+#nav_right{
+    margin-left: 800px;
+    height: 32px;
+    width: 400px;
+}
+.clear{
+    zoom:1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#top{
+    margin:0 auto;
+    border-bottom: 1px red solid;
+}
+#top_m{
+    height: 130px;
+}
+#gif{
+    margin-left: -38px;
+}
+#text{
+    width: 491px;
+    height: 36px;
+    border:2px solid red;
+    font-size: 16px;
+    line-height: 36px;
+    color: #C9CAC9;
+    vertical-align:middle;
+}
+#button{
+    width: 132px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: white;
+    background-color: red;
+    border-style: none;
+    margin-left: -4px;
+    vertical-align:middle;
+}
+#input_all{
+    margin-top: -80px;
+    margin-left: 400px;
+    width:650px;
+}
+#rotation{
+    line-height: 36px;
+    font-size: 16px;
+    border-top: 1px red solid;
+}
+#sort{
+    width: 200px;
+    height: 36px;
+    color: white;
+    background-color: red;
+    float: left;
+    font-weight: 700;
+    margin-left: 6px;
+}
+#sort img{
+    width:20px ;
+    height: 20px;
+    vertical-align:middle;
+    margin-right: 10px;
+}
+#rotation #first_nav li{
+    float: left;
+    margin-left: 24px;
+}
+#rotation #first_nav li a{
+    color: black;
+}
+#rotation #first_nav li a:hover{
+    color: red;
+}
+#rotation #first_nav li img{
+    width: 100px;
+    height: 30px;
+    margin-top: 3px;
+    display: block;
+    cursor: pointer;
+}
+#first_nav{
+    width: 1100px;
+}
+#img_ad{
+    width: 1260px;
+    background: url("img/Carousel4.webp") no-repeat;
+    position: relative;
+}
+#back{
+    width: 200px;
+    background-color: rgba(0,0,0,0.6);
+    margin-left: 6px;
+}
+#back li{
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+}
+#back li:hover{
+    cursor:pointer;
+    background-color:white;
+    opacity:1;
+    color:blue;
+}
+#back li span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 6px 0 4px ;
+    vertical-align: middle;
+    background:url("img/css_sprites (1).png") no-repeat;
+}
+#back li span.icon_woman{background-position:  -82px -82px}
+#back li span.icon_man{background-position: -46px -82px}
+#back li span.icon_shoes{background-position:  -10px -82px}
+#back li span.icon_make{background-position: -82px -10px}
+#back li span.icon-classes{background-position:-118px -118px}
+#back li span.icon_phone{background-position:  -118px -46px}
+#back li span.icon_toys{background-position:-82px -118px}
+#back li span.icon_tea{background-position:-82px -46px}
+#back li span.icon_fruit{background-position:  -118px -82px}
+#back li span.icon_juicer{background-position: -10px -10px }
+#back li span.icon_furniture{background-position:-46px -46px}
+#back li span.icon_cars{background-position:-10px -46px}
+#back li span.icon_flowers{background-position:-118px -10px}
+#back li span.icon_medic{background-position: -46px -118px}
+#back li span.icon_pets{background-position:  -46px -10px}
+#back li span.icon_books{background-position:-10px -118px}
+#back .menu{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 206px;
+    width: 750px;
+    height: 480px;
+    background-color:#FAFAFA ;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+#back li:hover .menu{
+    display: block;
+}
+#back .menu ul{
+    color: black;
+    margin-left: 30px;
+}
+#img_t{
+    width:1260px ;
+}
+ #tmall{
+     width: 1260px;
+     height: 140px;
+     text-align: center;
+     margin-top:30px ;
+ }
+ #img_t img{
+     width: 238px;
+     height: 269px;
+     margin-left: 10px;
+     margin-top: -70px;
+ }
+ #sale img{
+     height: 316px;
+ }
+ #sale {
+     font-size: 18px;
+     font-weight: bold;
+ }
+ #sale .activity{
+     margin-left: 10px;
+ }
+#sale .activity div{
+    height: 55px;
+    line-height: 55px;
+    padding-left: 10px;
+}
+#sale #ad_t{
+    margin-left: 260px;
+    margin-top: -374px;
+}
+#sale #ad_th{
+    margin-top: -374px;
+    margin-left: 756px;
+}

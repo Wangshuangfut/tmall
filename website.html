@@ -4,104 +4,293 @@
     <meta charset="UTF-8">
     <title>天猫tmall.com--理想生活上天猫</title>
     <link rel="icon" type="image/x-icon" href="img/tmall.png" />
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2292853_eunh2pl7t6l.css">
     <link rel="stylesheet" type="text/css" href="web.css">
     <script type="text/javascript" src="site.js"></script>
 </head>
 <body>
-<div id="top">
-    <div id="nav">
-        <div id="nav_left" >
-            <ul>
-                <li>喵，欢迎来到天猫</li>
-                <li><a href="#">请登录</a></li>
-                <li><a href="#">免费注册</a></li>
-            </ul>
+<div id="web">
+    <div id="top">
+        <div id="nav">
+            <div id="nav_left" >
+                <ul>
+                    <li>喵，欢迎来到天猫</li>
+                    <li><a href="#">请登录</a></li>
+                    <li><a href="#">免费注册</a></li>
+                </ul>
+            </div>
+            <div id="nav_right" class="clear">
+                <ul>
+                    <li class="main">
+                        <a href="#">我的淘宝</a>
+                        <i class="iconfont icon-icon_xuanze_nor"></i>
+                        <div>
+                            <dl>
+                                <dd>已买到的宝贝</dd>
+                                <dd>已卖出的宝贝</dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="main">
+                        <i class="iconfont icon-31gouwuchexuanzhong-copy"></i>
+                        <a href="#">购物车</a>
+                    </li>
+                    <li class="main">
+                        <a href="#">收藏夹</a>
+                        <i class="iconfont icon-icon_xuanze_nor"></i>
+                        <div>
+                            <dl>
+                                <dd>收藏的宝贝</dd>
+                                <dd>收藏的店铺</dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="main">
+                        <i class="iconfont icon-shumashouji-copy"></i>
+                        <a href="#">手机版</a>
+                    </li>
+                    <li class="main"><a href="#">淘宝网</a></li>
+                    <li class="main">
+                        <a href="#">商家支持</a>
+                        <i class="iconfont icon-icon_xuanze_nor"></i>
+                    </li>
+                    <li class="main">
+                        <i class="iconfont icon-liebiao"></i>
+                        <a href="#">网站导航</a>
+                        <i class="iconfont icon-icon_xuanze_nor"></i>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="nav_right" class="clear">
-            <ul>
-                <li><a href="#">我的淘宝</a></li>
-                <li><a href="#">购物车</a></li>
-                <li><a href="#">收藏夹</a></li>
-                <li><a href="#">手机版</a></li>
-                <li><a href="#">淘宝网</a></li>
-                <li><a href="#">商家支持</a></li>
-                <li><a href="#">网站导航</a></li>
-            </ul>
+        <div id="top_m">
+            <img id="gif" src="img/1.gif"/>
+            <div id="input_all">
+            <input  id="text" type="text" placeholder="搜索 天猫 商品/品牌/店铺"/>
+            <input id="button" type="button" value="搜索"/>
+            </div>
         </div>
     </div>
-    <div id="top_m">
-        <img id="gif" src="img/1.gif"/>
-        <div id="input_all">
-        <input  id="text" type="text" placeholder="搜索 天猫 商品/品牌/店铺"/>
-        <input id="button" type="button" value="搜索"/>
-        </div>
-    </div>
-</div>
-<div id="rotation">
-    <div id="sort"><img src="img/daohang_red.png"/>商品分类</div>
-    <ul id="first_nav" class="clear">
-            <li><img src="img/tmall_g.png"></li>
-            <li><img src="img/tamll_p.png"></li>
-            <li><a href="#">天猫会员</a></li>
-            <li><a href="#">电器城</a></li>
-            <li><a href="#">喵鲜生</a></li>
-            <li><a href="#">医药馆</a></li>
-            <li><a href="#">营业厅</a></li>
-            <li><a href="#">魅力惠</a></li>
-            <li><a href="#">飞猪旅行</a></li>
-            <li><a href="#">苏宁易购</a></li>
-    </ul>
-    <div id="img_ad">
+    <div id="rotation">
+        <div id="sort"><img src="img/daohang_red.png"/>商品分类</div>
+        <ul id="first_nav" class="clear">
+                <li><img src="img/tmall_g.png"></li>
+                <li><img src="img/tamll_p.png"></li>
+                <li><a href="#">天猫会员</a></li>
+                <li><a href="#">电器城</a></li>
+                <li><a href="#">喵鲜生</a></li>
+                <li><a href="#">医药馆</a></li>
+                <li><a href="#">营业厅</a></li>
+                <li><a href="#">魅力惠</a></li>
+                <li><a href="#">飞猪旅行</a></li>
+                <li><a href="#">苏宁易购</a></li>
+        </ul>
+        <div id="img_ad"></div>
         <div id="back">
             <ul>
                 <li>
-                    <span class="icon_woman"></span>
+                    <i class="iconfont icon-nvzhuangneiyi"></i>
                     女装/内衣
                     <div class="menu">fgdvb</div>
                 </li>
-                <li><span class="icon_man"></span>男装/运动户外<div class="menu"></div></li>
-                <li><span class="icon_shoes"></span>女鞋/男鞋/箱包<div class="menu"></div></li>
-                <li><span class="icon_make"></span>美妆/个人护理<div class="menu"></div></li>
-                <li><span class="icon-classes"></span>腕表/眼镜/珠宝饰品<div class="menu"></div></li>
-                <li><span class="icon_phone"></span>手机/数码/电脑办公<div class="menu"></div></li>
-                <li><span class="icon_toys"></span>母婴玩具<div class="menu"></div></li>
-                <li><span class="icon_tea"></span>零食/茶酒/进口食品<div class="menu"></div></li>
-                <li><span class="icon_fruit"></span>生鲜水果<div class="menu"></div></li>
-                <li><span class="icon_juicer"></span>大家电/生活电器<div class="menu"></div></li>
-                <li><span class="icon_furniture"></span>家具建材<div class="menu"></div></li>
-                <li><span class="icon_cars"></span>汽车/配件/用品<div class="menu"></div></li>
-                <li><span class="icon_flowers"></span>家纺/家饰/鲜花<div class="menu"></div></li>
-                <li><span class="icon_medic"></span>医药保健<div class="menu"></div></li>
-                <li><span class="icon_pets"></span>厨具/收纳/宠物<div class="menu"></div></li>
-                <li><span class="icon_books"></span>图书音像<div class="menu" id="menu"></div></li>
+                <li><i class="iconfont icon-nanzhuang"></i>男装/运动户外<div class="menu"></div></li>
+                <li><i class="iconfont icon-xie"></i>女鞋/男鞋/箱包<div class="menu"></div></li>
+                <li><i class="iconfont icon-huazhuangpin"></i>美妆/个人护理<div class="menu"></div></li>
+                <li><i class="iconfont icon-zhubaoshipin"></i>腕表/眼镜/珠宝饰品<div class="menu"></div></li>
+                <li><i class="iconfont icon-shumashouji"></i>手机/数码/电脑办公<div class="menu"></div></li>
+                <li><i class="iconfont icon-muyingwanju"></i>母婴玩具<div class="menu"></div></li>
+                <li><i class="iconfont icon-shipin"></i>零食/茶酒/进口食品<div class="menu"></div></li>
+                <li><i class="iconfont icon-miaoxiansheng"></i>生鲜水果<div class="menu"></div></li>
+                <li><i class="iconfont icon-jiayongdianqi"></i>大家电/生活电器<div class="menu"></div></li>
+                <li><i class="iconfont icon-jiajujiancai"></i>家具建材<div class="menu"></div></li>
+                <li><i class="iconfont icon-qichepeijian"></i>汽车/配件/用品<div class="menu"></div></li>
+                <li><i class="iconfont icon-jiafangjiashi"></i>家纺/家饰/鲜花<div class="menu"></div></li>
+                <li><i class="iconfont icon-yiyaobaojian"></i>医药保健<div class="menu"></div></li>
+                <li><i class="iconfont icon-jujia"></i>厨具/收纳/宠物<div class="menu"></div></li>
+                <li><i class="iconfont icon-tushuyinxiang"></i>图书音像<div class="menu" id="menu"></div></li>
             </ul>
         </div>
     </div>
-</div>
-<div id="middle">
-    <div id="tmall">
-      <img src="img/tian.png">
+    <div id="middle">
+        <div id="tmall">
+          <img src="img/tian.png">
+        </div>
+        <div id="img_t">
+            <img src="img/1.webp"/>
+            <img src="img/2.webp"/>
+            <img src="img/3.webp"/>
+            <img src="img/4.webp"/>
+            <img src="img/5.webp"/>
+        </div>
+        <div id="sale">
+            <div class="activity">
+                <div>品牌闪购 BRAND SALE</div>
+                <img src="img/8.webp" class="first"/>
+            </div>
+            <div class="activity" id="ad_t">
+                <div>聚名品LUXURY CHANNEL</div>
+                <img src="img/7.webp"/>
+            </div>
+            <div class="activity" id="ad_th">
+                <div>品牌活动BRAND ACTIVITY</div>
+                <img src="img/9.webp"/>
+            </div>
+        </div>
     </div>
-    <div id="img_t">
-        <img src="img/1.webp"/>
-        <img src="img/2.webp"/>
-        <img src="img/3.webp"/>
-        <img src="img/4.webp"/>
-        <img src="img/5.webp"/>
+    <div id="enter">
+        <ul>
+            <li>
+                <div>
+                    <img src="img_enter/ban.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/shinai.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/meizanchen.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/assa.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/cataio.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/roya.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/league.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/dazhong.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/thenorthface.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/sout.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/bear.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/suning.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/crocs.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/acqua.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/American.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/shuangxin.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/hot.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/barneys.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/mark.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/fagor.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/deco.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/febreze.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/stokke.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/woll.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/darlie.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/crest.webp"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/colgate.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/kex.png"/>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img_enter/whisper.webp"/>
+                </div>
+            </li>
+        </ul>
+        <div class="update">
+            <i class="iconfont icon-huanyipi"></i>
+            <span>换一批</span>
+        </div>
     </div>
-    <div id="sale">
-        <div class="activity">
-            <div>品牌闪购 BRAND SALE</div>
-            <img src="img/8.webp"/>
-        </div>
-        <div class="activity" id="ad_t">
-            <div >聚名品LUXURY CHANNEL</div>
-            <img src="img/7.webp"/>
-        </div>
-        <div class="activity" id="ad_th">
-            <div>品牌活动BRAND ACTIVITY</div>
-            <img src="img/9.webp"/>
-        </div>
+    <div id="tmall_mark">
+
     </div>
 </div>
 </body>

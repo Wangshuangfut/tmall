@@ -45,7 +45,6 @@ body #web{
     margin-left: 750px;
     height: 32px;
     width: 500px;
-    border: 1px red solid;
 }
 .clear{
     zoom:1;
@@ -90,8 +89,92 @@ body #web{
     position: relative;
     vertical-align: middle;
 }
+#nav_right .main .dif{
+    color: red;
+}
+.main .code_img{
+    width: 160px;
+    height: 220px;
+    margin-left: -60px;
+}
+#nav_right .main .shopper{
+    width: 110px;
+    background-color: white;
+    margin-left: -50px;
+}
+.main .shopper dd{
+    float: left;
+    padding-right:4px;
+}
+.main .shopper dt{
+    font-weight: 600;
+}
+.main .shopper dl{
+    border-bottom: 1px gainsboro solid;
+    margin-left:2px;
+}
+#nav_right .main .last_nav{
+    width: 1260px;
+    height: 180px;
+    background-color: white;
+    margin-left: -1100px;
+    margin-top: 0;
+}
+.main .last_nav div{
+    float: left;
+}
+#nav_right .main .last_nav div li{
+    float: left;
+    line-height: 24px;
+}
+#nav_right .main .last_nav div{
+    margin-top: -30px;
+    width: 450px;
+    border: none;
+    margin-left: 10px;
+}
+#nav_right .main .last_nav div h5{
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#nav_right .main .last_nav .first_nav h5{
+     color: orange;
+}
+#nav_right .main .last_nav .first_nav{
+    border-right: 1px gainsboro solid;
+}
+#nav_right .main .last_nav div li{
+    margin: 6px 0;
+    width: 90px;
+}
+#nav_right .main .last_nav div li:hover{
+    cursor: pointer;
+}
+#nav_right .main .last_nav .second_nav{
+    width: 450px;
+    margin-left: 500px;
+    border-right: 1px gainsboro solid;
+}
+.main .last_nav .second_nav h5{
+    color: blue;
+}
+#nav_right .main .last_nav .third_nav{
+    width: 200px;
+    margin-left: 1000px;
+}
+#nav_right .main .last_nav .third_nav li{
+    line-height: 18px;
+}
 #nav_right .main:hover{
     background-color: white;
+}
+#nav_right .main:nth-of-type(2):hover{
+     background-color: #F2F2F2;
+}
+#nav_right .main:nth-of-type(5):hover{
+    background-color: #F2F2F2;
 }
 #nav_right .main:hover  div{
     display: block;
@@ -103,11 +186,24 @@ body #web{
     width: 80px;
     position: absolute;
     top:30px ;
+    z-index: 100;
 }
 #nav_right .main i{
     vertical-align: middle;
     font-size: 12px;
     margin-left:-2px;
+}
+#nav_right .main .down{
+    font-size: 18px;
+    margin-left:-16px;
+    float: right;
+    display: none;
+}
+#nav_right .main:hover .down{
+    display: block;
+}
+#nav_right .main:hover .up{
+    display: none;
 }
 #nav_right .main div dd{
     margin-top:-6px;
@@ -155,7 +251,7 @@ body #web{
     cursor: pointer;
 }
 #img_ad{
-    height: 505px;
+    height: 500px;
     background: url("img/Carousel4.webp") no-repeat;
     position: relative;
     border-top: 2px red solid;
@@ -182,7 +278,7 @@ body #web{
     background-color: rgba(0,0,0,0.6);
     margin-left: 6px;
     top: 200px;
-    height:505px ;
+    height:500px ;
 }
 #back li{
     font-weight: 500;
@@ -195,9 +291,7 @@ body #web{
     background-color:white;
     opacity:1;
     color:blue;
-}#back li:hover i{
-    color: blue;
- }
+}
 #back li i{
     margin: 0 4px 0 14px;
     color: grey;
@@ -208,18 +302,92 @@ body #web{
     top:0;
     left: 200px;
     width: 750px;
-    height: 505px;
+    height: 500px;
     background-color:#FAFAFA ;
+    font-size: 14px;
+    z-index: 99999;
+}
+/*#back .menu .menu_text{
+    border: 1px red solid;
+    width: 400px;
+}*/
+#back .menu .menu_text ul li{
+    float: left;
+    font-size: 14px;
     color: black;
+    padding-left: 10px;
+}
+.menu .menu_text .line_title{
+    width: 65px;
+    color: #333;
+    margin-left: 18px;
+    margin-top: 4px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    height: 22px;
+    float: left;
+}
+.menu .menu_text .line_con{
+    width: 490px;
+    margin-left: 100px;
+    border-bottom: 1px solid gainsboro;
+}
+.menu_text .title_text{
     font-weight: bold;
-    font-size: 16px;
+    display: inline-block;
+}
+.menu .menu_text i{
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    font-weight: 200;
+}
+#back .menu .menu_text .line_con ul:hover li{
+    background-color:#F5F5F5;
+}
+.menu #img_all {
+    width: 170px;
+    height: 380px;
+    margin-left: 590px;
+    /*margin-top: -800px;*/
+    /*border: 1px red solid;*/
+}
+.menu #img_all img{
+    width: 76px;
+    height: 38px;
+    vertical-align: middle;
+    float: left;
+    border: 1px gainsboro solid;
 }
 #back li:hover .menu{
     display: block;
 }
-#back .menu ul{
-    color: black;
-    margin-left: 30px;
+#nav_inner{
+    height: 18px;
+    width: 1260px;
+    margin-top: -50px;
+    z-index: 1000;
+    position: relative;
+}
+#nav_inner li{
+    list-style: none;
+    float: left;
+    width: 25px;
+    height: 5px;
+    background-color: #999999;
+    margin-top: 6px;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+#nav_inner .selected{
+    background-color: white;
+}
+#nav_inner li:nth-of-type(1){
+    margin-left: 500px;
 }
 #img_t{
     width:1260px ;
@@ -228,7 +396,7 @@ body #web{
      width: 1260px;
      height: 140px;
      text-align: center;
-     margin-top:30px ;
+     margin-top:60px ;
 }
 #img_t img{
      width: 238px;
@@ -291,6 +459,7 @@ body #web{
     border-right:1px #C9CAC9 solid;
     text-align: center;
     line-height: 108px;
+    position: relative;
 }
 #enter div:hover{
     cursor: pointer;
@@ -300,6 +469,46 @@ body #web{
     height: 50px;
     vertical-align: middle;
 }
+#enter .discount{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left: 10px;
+    color: white;
+    height: 90px;
+    width: 102px;
+}
+#enter .icon_enter{
+    opacity: 0;
+    position: absolute;
+    top:70px;
+    left: 26px;
+    color: #fff;
+    width: 63px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: #FF0036;
+    border-radius: 9px;
+}
+#enter li:hover .inner{
+    background-color: black;
+
+}
+#enter li:hover  .icon_enter{
+    opacity: 1;
+    background-color:red;
+}
+#enter li:hover .discount{
+    opacity: 1;
+    background-color:black;
+}
+#enter .inner:hover img{
+    background: black;
+    z-index: -11;
+    position: relative;
+}
+
 #enter .no_bottom{
     border-bottom: none;
 }
@@ -430,7 +639,7 @@ body #web{
     margin-top: 5px;
     box-shadow:0 5px 10px #F5F5F5;
 }
-#all .all_in li{
+.all_in li{
     float: left;
     width: 231px;
     height:57px ;
@@ -439,6 +648,9 @@ body #web{
     color: black;
     background-color: #F5F5F5;
     text-align: center;
+}
+.all_in .green{
+    background-color: #00B262;
 }
 #all .mart_inner img{
     float: right;

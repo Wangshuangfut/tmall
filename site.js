@@ -4,64 +4,90 @@ window.onload=function (){
     var oImg=document.getElementById("img_ad");
     var oFir=document.getElementById("first_img");
     var oSec=document.getElementById("sec");
-    /*alert(oFir);*/
     var oDiv1=document.getElementById("fir_div");
     var oDiv2=document.getElementById("sec_div");
+    var oNav=document.getElementById("nav_inner");
+    var aNavLi=oNav.getElementsByTagName("li");
     oImg.style.background="url(img/Carousel4.webp)";
+    var timer=null;
     var i=0;
-    setInterval(function (){
+    timer=setInterval(doMove ,5000);
+    function doMove (){
         i++;
         i=i%img.length;
         oImg.style.background="url("+img[i]+")";
-       /* alert(i%img.length==3);*/
-        if(i==1){
-            oFir.src="img/book.webp";
-            oSec.src="img/clothes.webp";
-        }else if(i==3){
-            oFir.src="img/clothes_s.webp";
-            oSec.src="img/watch.webp";
-        }else if(i==5){
-            oFir.src="img/man.webp";
-            oSec.src="img/decorations.webp";
-        }else if(i==0){
+        for(var j=0;j<aNavLi.length;j++){
+            aNavLi[j].className="";
+        }
+        if(i===0){
             oFir.src="img/Carousel5_2.webp";
             oSec.src="img/Carousel4_1.webp";
+            aNavLi[0].className="selected";
+        }else if(i===1){
+            oFir.src="img/decorations.webp";
+            oSec.src="img/book.webp";
+            aNavLi[1].className="selected";
+        }else if(i===2){
+            oFir.src="img/man.webp";
+            oSec.src="img/clothes.webp";
+            aNavLi[2].className="selected";
+        }else if(i===3) {
+            oFir.src = "img/clothes_s.webp";
+            oSec.src = "img/watch.webp";
+            aNavLi[3].className = "selected";
         }else {
             oDiv1.style.display="none";
             oDiv2.style.display="none";
+            aNavLi[i].className="selected";
         }
-    },5000)
+    }
+   /* oImg.onmouseover=function (){
+        clearInterval(timer);
+    }*/
+   /* oImg.onmouseout=function (){
+        clearInterval(timer);
+        setInterval(doMove ,5000);
+    }*/
+
+
+
+    /*顶部导航栏的隐藏显现*/
+    var topDiv=document.getElementById("hidden_title");
+    window.onscroll=function (){
+        if (document.documentElement.scrollTop >= 800){
+            topDiv.style.display="block";
+            topDiv.style.zIndex="999";
+        }else {
+            topDiv.style.display="none";
+        }
+    }
+
+
+
+
+
+
+
+    var oUl= document.getElementById("back");
+    var aLi=oUl.getElementsByTagName("li");
+    for(var j=0;j<aLi.length;j++){
+        var oldColor=aLi[j].style.color;
+        aLi[j].onmouseover=function (){
+            this.style.color=randomColor();
+        }
+        aLi[j].onmouseout=function (){
+            this.style.color=oldColor;
+        }
+    }
+    /*随机生成颜色*/
+    function randomColor (){
+        var str='#';
+        for(var i=0;i<6;i++){
+            str+=Math.floor(Math.random()*16).toString(16);
+        }
+        return str;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*function addMenu(){
